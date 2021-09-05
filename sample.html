@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+
+<title>title</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="sample.js" charset="UTF-8"></script> 
+</head>
+<body>
+
+<h1>aaaaaa</h1>
+
+<div id ="test">
+<p>testes</p>
+</div>
+
+<a href="C:\Users\teram\OneDrive\ドキュメント\DSC_0312.JPG">link</a>
+
+<div id ="test2">
+<p>aaaaaa</p>
+</div>
+
+<button onclick="show();">ボタン</button>
+
+<script>
+function show(){
+	var showele = document.getElementById("test2");
+	var uri ="C:\Users\teram\OneDrive\デスクトップ\ggggg.html";
+	var res1 = unescape(encodeURIComponent(uri));
+	var linker2 ='<a href=uri>がちがち</a>';
+	showele.innerHTML = linker2;
+}
+</script>
+
+
+</body>
+</html>
